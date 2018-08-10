@@ -4,8 +4,7 @@
   "description": "Higher-order React component for adding style helper props based on understyle",
   "main": "dist/Robox.js",
   "scripts": {
-    "prepublish": "mkdir -p dist && babel src --out-dir dist",
-    "test": "standard && ava -v"
+    "test": "standard && jest"
   },
   "keywords": [
     "react",
@@ -17,29 +16,23 @@
   ],
   "author": "Brent Jackson",
   "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.4.2"
+  },
   "dependencies": {
+    "prop-types": "^15.6.2",
     "understyle": "^1.2.0"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
-    "babel-cli": "^6.11.4",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.11.1",
-    "babel-preset-stage-0": "^6.5.0",
-    "babel-register": "^6.11.5",
-    "enzyme": "^2.4.1",
-    "react": "^15.2.1",
-    "react-addons-test-utils": "^15.2.1",
-    "react-dom": "^15.2.1",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^23.5.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "standard": "^7.1.2",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
-  },
-  "ava": {
-    "require": [
-      "babel-register"
-    ],
-    "babel": "inherit"
   }
 }
