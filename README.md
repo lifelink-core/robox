@@ -1,6 +1,8 @@
 
 # Robox
 
+*This project has been archived, any code / packages are likely obsolete and should not be reused.*
+
 Higher-order React component for adding style helper props based on [understyle](https://github.com/jxnblk/understyle)
 
 [![Build Status](https://travis-ci.org/jxnblk/robox.svg?branch=master)](https://travis-ci.org/jxnblk/robox)
